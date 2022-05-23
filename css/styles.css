@@ -1420,6 +1420,12 @@
         .topsong-trend img {
             width: 70%;
         }
+	    .topsong-img img {
+
+        width: 80%;
+
+        
+    }
     }
     
     .topsong-trend p {
