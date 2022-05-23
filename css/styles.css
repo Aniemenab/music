@@ -34,7 +34,7 @@
     @media (max-width: 991.98px) {
         .ftco-navbar-light {
             background: #000 !important;
-            position: relative;
+            position:relative;
             top: 0;
             padding: 20px 15px !important;
         }
@@ -1420,12 +1420,28 @@
         .topsong-trend img {
             width: 70%;
         }
-	    .topsong-img img {
+	    
 
-        width: 80%;
+
+ 
+    
+    }
+    @media screen and (max-width:500px) {
 
         
+
+           
+
+        
+
+	    .topsong-img img {
+
+        width: 50% ! important;
+
+        
+
     }
+
     }
     
     .topsong-trend p {
