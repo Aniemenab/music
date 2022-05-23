@@ -1,5 +1,9 @@
     /*----------  Header  ----------*/
     
+    body {
+        overflow-x: hidden !important;
+    }
+    
     .bg-primary {
         background: #ff0000 !important;
     }
@@ -1072,10 +1076,449 @@
         }
     }
     /*=====  End of subscribing  ======*/
+    /*---------------------
+	Contact page
+-----------------------*/
+    
+    *+.list-creative {
+        margin-top: 30px;
+    }
+    
+    .list-creative {
+        text-align: left;
+    }
+    
+    ul,
+    ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    ol,
+    ul,
+    dl {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .list-terms-medium {
+        position: relative;
+        padding: 10px 0 10px 30px;
+        border-left: 3px solid rgb(36, 52, 82);
+    }
+    
+    .list-terms-medium dt {
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #151515;
+    }
+    
+    dt,
+    dd {
+        line-height: inherit;
+    }
+    
+    .list-terms-medium dt+dd {
+        margin-top: 10px;
+    }
+    
+    .list-terms-medium a {
+        color: #868e96;
+    }
+    
+    .contact-form {
+        padding-right: 35px;
+    }
+    
+    .contact-form h5 {
+        font-size: 16px;
+        font-family: "Rubik", sans-serif;
+    }
+    
+    .contact-form h5 span {
+        color: #16d0c5;
+    }
+    
+    .contact-form .form-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .contact-form .form-group span {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        font-size: 16px;
+        color: #7bc063;
+        opacity: 0;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    
+    .contact-form .form-group span.active {
+        opacity: 1;
+    }
+    
+    .contact-form .check-form {
+        padding-right: 20px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid gray;
+        font-size: 16px;
+        padding-bottom: 10px;
+        color: rgb(150, 150, 150);
+    }
+    
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border-color: rgb(156, 156, 156);
+    }
+    
+    .contact-form textarea {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        height: 115px;
+    }
+    
+    .contact-form .contact-type .ct-label {
+        display: inline-block;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 12px;
+        margin-right: 40px;
+        cursor: pointer;
+        font-size: 16px;
+        color: #acb9cc;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .contact-form .contact-type .ct-label input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .contact-form .contact-type .ct-label input:checked~.checkmark:after {
+        content: "\f111";
+        color: #16d0c5;
+    }
+    
+    .contact-form .contact-type .ct-label .checkmark {
+        position: absolute;
+        top: 3px;
+        left: 0;
+        height: 25px;
+        width: 25px;
+    }
+    
+    .contact-form .contact-type .ct-label .checkmark:after {
+        position: absolute;
+        content: "\f10c";
+        font-family: "FontAwesome";
+        font-size: 14px;
+    }
+    
+    .contact-form .contact-type .ct-label:last-child {
+        margin-right: 0;
+    }
+    
+    .contact-form ::-webkit-input-placeholder {
+        color: #acb9cc;
+    }
+    
+    .contact-form :-ms-input-placeholder {
+        color: #acb9cc;
+    }
+    
+    .contact-form ::-ms-input-placeholder {
+        color: #acb9cc;
+    }
+    
+    .contact-form ::placeholder {
+        color: #acb9cc;
+    }
+    /*=============================================
+    =            TOPSONG            =
+    =============================================*/
+    
+    .main-topsong {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        margin-top: -2rem;
+    }
+    
+    @media screen and (max-width:890px) {
+        .main-topsong {
+            flex-direction: column;
+        }
+        .topsong,
+        aside.aside {
+            width: 100% !important;
+        }
+    }
+    
+    aside.aside {
+        width: 400px;
+        height: auto;
+        padding-top: 1rem;
+    }
+    
+    .topsong {
+        width: 80%;
+        height: auto;
+    }
+    
+    .song__ {
+        width: 100%;
+        height: auto;
+        display: flex !important;
+        padding-bottom: 1rem;
+    }
+    
+    @media screen and (max-width:575px) {
+        .song__ {
+            flex-direction: column !important;
+        }
+        .song__link {
+            width: 200px;
+        }
+    }
+    
+    @media screen and (max-width:486px) {
+        .ran .song__link:nth-child(2) {
+            margin-left: 7px !important;
+        }
+        .ran .song__link:nth-child(1) {
+            padding-left: 1.8rem;
+        }
+    }
+    
+    @media screen and (max-width:402px) {
+        .ran {
+            flex-direction: column !important;
+            flex-wrap: wrap
+        }
+        .three {
+            margin-left: 2px !important;
+        }
+    }
+    
+    @media screen and (max-width:1024px) {
+        .one {
+            margin-left: -9px !important;
+        }
+        .two {
+            margin-left: -2px !important;
+        }
+    }
+    
+    @media screen and (max-width:1019px) {
+        .one {
+            margin-left: -14px !important;
+        }
+        .two {
+            margin-left: -7px !important;
+        }
+    }
+    
+    @media screen and (max-width:991px) {
+        .one {
+            margin-left: 12px !important;
+        }
+        .two {
+            margin-left: 7px !important;
+        }
+    }
+    
+    .ran {
+        width: 100%;
+        height: auto;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+    
+    .ran .song__link:nth-child(1) {
+        margin-left: -20px;
+    }
+    
+    .ran .song__link:nth-child(2) {
+        margin-left: 10px;
+    }
+    
+    .topsong-img {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    
+    .topsong-img h3 {
+        margin-top: 3.9rem;
+        font-size: 1.2rem;
+    }
+    
+    .topsong-img img {
+        width: 100%;
+        height: 120px;
+        margin-top: 20px;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+    
+    .topsong-about {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-overflow: ellipsis;
+        margin-top: 1rem;
+    }
+    
+    .song__link p a,
+    .topsong-trend a {
+        background-image: linear-gradient(60deg, #339299 10%, #633e9c);
+        width: auto;
+        padding: 11px 20px;
+        border-radius: 20px;
+        color: white;
+    }
+    
+    .topsong-about p a:nth-child(2) {
+        margin-left: .7rem;
+    }
+    
+    .song__link p a:hover,
+    .topsong-trend a:hover,
+    .sub button {
+        box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.7)
+    }
+    
+    .topsong-trend {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    
+    .topsong-trend img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    @media screen and (max-width:480px) {
+        .topsong-trend img {
+            width: 70%;
+        }
+    }
+    
+    .topsong-trend p {
+        margin-top: 1.5rem;
+    }
+    
+    .topsong-trend form input {
+        width: 100%;
+        filter: drop-shadow(0px 8px 0px 6px);
+        border-radius: 10px;
+        border: 1px groove;
+        height: 50px;
+        background-color: whitesmoke;
+    }
+    
+    .sub button {
+        background-image: linear-gradient(60deg, #339299 10%, #633e9c);
+        width: 200px;
+        padding: 11px 11px;
+        border-radius: 20px;
+        color: white;
+        border: none;
+        margin: auto;
+        box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.7)
+    }
+    
+    .sub button:hover {
+        background-image: linear-gradient(60deg, #633e9c 10%, #339299);
+    }
+    
+    .page {
+        width: 300px;
+        height: auto;
+        margin-top: 1rem;
+    }
+    
+    .page a:nth-child(1),
+    .page a:nth-child(2) {
+        background-image: linear-gradient(60deg, #339299 10%, #633e9c);
+        width: 200px;
+        padding: 11px 14px;
+        border-radius: 10px;
+        color: white;
+        margin-left: 10px;
+    }
+    
+    .page a:nth-child(1):hover,
+    .page a:nth-child(2):hover {
+        background-image: linear-gradient(60deg, #339299 10%, #633e9c);
+        width: 200px;
+        padding: 11px 11px;
+        border-radius: 20px;
+        box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.7);
+    }
+    
+    .page i {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        color: black;
+    }
+    /*=====  End of TOPSONG  ======*/
+    /*=============================================
+    =            AlBUMS            =
+    =============================================*/
+    
+    .album {
+        padding-bottom: 20px;
+    }
+    
+    .album a {
+        background-image: linear-gradient(60deg, #339299 10%, #633e9c);
+        width: 300px;
+        padding: 15px 50px;
+    }
+    
+    .album a:hover {
+        background-image: linear-gradient(45deg, #633e9c 50%, #339299);
+        color: white;
+        transition: ease-in .3s;
+        box-shadow: 6px 0px 16px 0px rgba(0, 0, 0, 0.3);
+    }
+    
+    .album-cover {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .album-cover img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    .album-cover h4 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /*=====  End of AlBUMS  ======*/
     /*=============================================
     =            Footer            =
     =============================================*/
-    /*=====  Section comment block  ======*/
     
     footer {
         width: 100%;
