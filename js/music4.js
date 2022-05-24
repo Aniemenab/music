@@ -13,8 +13,8 @@ const durTime = document.querySelector('#durTime');
 
 // Song titles
 const songs = [
-    'Juice WRLD Ft Benny Blanco - Real Shit',
-    'Lil Baby, Lil Durk ft Rodwave - Rich Off Pain',
+    
+   
     'The Joker And The Queen'
 
 
