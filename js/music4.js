@@ -13,8 +13,8 @@ const durTime = document.querySelector('#durTime');
 
 // Song titles
 const songs = [
-    'We Care',
-   
+    'Pills and Auto Mobile',
+    'Stay With me',
     'The Joker And The Queen'
 
 
