@@ -15,7 +15,7 @@ const durTime = document.querySelector('#durTime');
 const songs = [
     'Juice WRLD Ft Benny Blanco - Real Shit',
     'Lil Baby, Lil Durk ft Rodwave - Rich Off Pain',
-    'No Time For TOxic People'
+    'No Time For Toxic People'
 
 
 
