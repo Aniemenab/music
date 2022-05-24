@@ -22,7 +22,7 @@ const songs = [
 ];
 
 // Keep track of song
-let songIndex = 1;
+let songIndex = 2;
 
 // Initially load song details into DOM
 loadSong(songs[songIndex]);
@@ -117,7 +117,7 @@ audio.addEventListener('timeupdate', updateProgress);
 progressContainer.addEventListener('click', setProgress);
 
 // Song ends
-audio.addEventListener('ended', nextSong);
+audio.addEventListener('ended');
 
 // Time of song
 audio.addEventListener('timeupdate', DurTime);
