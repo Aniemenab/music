@@ -117,7 +117,10 @@ audio.addEventListener('timeupdate', updateProgress);
 progressContainer.addEventListener('click', setProgress);
 
 // Song ends
-audio.addEventListener('ended');
+audio.addEventListener('ended', function pauseSong() {
+
+    musicContainer.classList.remove('play')
+});
 
 // Time of song
 audio.addEventListener('timeupdate', DurTime);
